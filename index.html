@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الرئيسية — الموقع الطبي</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="d-flex flex-column min-vh-100 site-body">
+  <nav class="navbar navbar-expand-lg navbar-dark site-navbar shadow">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+        <span class="brand-icon rounded-circle d-inline-flex align-items-center justify-content-center text-white">
+          <i class="bi bi-heart-pulse-fill" aria-hidden="true"></i>
+        </span>
+        الموقع الطبي
+      </a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="قائمة التنقل">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-1">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house-door ms-1" aria-hidden="true"></i> الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="diagnosis.html"><i class="bi bi-clipboard2-pulse ms-1" aria-hidden="true"></i> التشخيص</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="diseases.html"><i class="bi bi-journal-medical ms-1" aria-hidden="true"></i> الأمراض</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html"><i class="bi bi-info-circle ms-1" aria-hidden="true"></i> من نحن</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"><i class="bi bi-envelope ms-1" aria-hidden="true"></i> التواصل</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container flex-grow-1 py-4 py-lg-5">
+    <section class="page-hero rounded-4 text-white p-4 p-md-5 mb-4 mb-lg-5">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <h1 class="display-6 fw-bold mb-3">موقع طبي تعليمي بتصميم حديث</h1>
+          <p class="mb-4 opacity-90 lh-lg">
+            استكشف معلومات مختصرة عن بعض الأمراض، واستخدم صفحة التشخيص المبدئي لملء نموذج الأعراض بشكل تعليمي.
+            هذا الموقع للعرض والتعلّم فقط.
+          </p>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-primary btn-lg rounded-pill px-4" href="diagnosis.html">
+              <i class="bi bi-clipboard2-pulse ms-2" aria-hidden="true"></i>
+              ابدأ التشخيص
+            </a>
+            <a class="btn btn-outline-light btn-lg rounded-pill px-4" href="diseases.html">
+              <i class="bi bi-journal-medical ms-2" aria-hidden="true"></i>
+              استعرض الأمراض
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="hero-illustration rounded-4 p-3 p-md-4 bg-white bg-opacity-10 border border-white border-opacity-25">
+            <div class="ratio ratio-1x1">
+              <svg viewBox="0 0 480 480" class="w-100 h-100" role="img" aria-label="رسمة توضيحية طبية">
+                <defs>
+                  <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+                    <stop offset="0" stop-color="#ffffff" stop-opacity="0.35" />
+                    <stop offset="1" stop-color="#ffffff" stop-opacity="0.12" />
+                  </linearGradient>
+                </defs>
+                <rect x="24" y="24" width="432" height="432" rx="56" fill="url(#g)" />
+                <path d="M240 112c-52.5 0-95 42.5-95 95s42.5 95 95 95 95-42.5 95-95-42.5-95-95-95Zm0 36c32.6 0 59 26.4 59 59s-26.4 59-59 59-59-26.4-59-59 26.4-59 59-59Z" fill="rgba(255,255,255,0.75)"/>
+                <path d="M240 312c-64.6 0-117 52.4-117 117h36c0-44.7 36.3-81 81-81s81 36.3 81 81h36c0-64.6-52.4-117-117-117Z" fill="rgba(255,255,255,0.7)"/>
+                <path d="M332 168h-28v-28h-36v28h-28v36h28v28h36v-28h28z" fill="rgba(147,197,253,0.95)"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-4 mb-lg-5">
+      <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+        <h2 class="h4 fw-bold section-heading mb-0">
+          <i class="bi bi-stars ms-2" aria-hidden="true"></i>
+          مميزات الموقع
+        </h2>
+        <small class="text-secondary">تصميم Bootstrap — متوافق مع الموبايل</small>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card content-card shadow-sm border-0 h-100">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-start gap-3">
+                <span class="hero-icon rounded-3 d-inline-flex align-items-center justify-content-center flex-shrink-0 text-white" style="background: rgba(37,99,235,0.85);">
+                  <i class="bi bi-phone" aria-hidden="true"></i>
+                </span>
+                <div>
+                  <h3 class="h6 fw-bold mb-2">متجاوب بالكامل</h3>
+                  <p class="mb-0 text-secondary lh-lg">يعمل بسلاسة على الهاتف والتابلت والكمبيوتر باستخدام Grid وBootstrap.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card content-card shadow-sm border-0 h-100">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-start gap-3">
+                <span class="hero-icon rounded-3 d-inline-flex align-items-center justify-content-center flex-shrink-0 text-white" style="background: rgba(30,64,175,0.9);">
+                  <i class="bi bi-layout-text-window-reverse" aria-hidden="true"></i>
+                </span>
+                <div>
+                  <h3 class="h6 fw-bold mb-2">صفحات متعددة</h3>
+                  <p class="mb-0 text-secondary lh-lg">Navbar موحّد وربط واضح بين الصفحات لسهولة التنقّل.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card content-card shadow-sm border-0 h-100">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-start gap-3">
+                <span class="hero-icon rounded-3 d-inline-flex align-items-center justify-content-center flex-shrink-0 text-white" style="background: rgba(23,37,84,0.9);">
+                  <i class="bi bi-palette2" aria-hidden="true"></i>
+                </span>
+                <div>
+                  <h3 class="h6 fw-bold mb-2">هوية بصرية مرتّبة</h3>
+                  <p class="mb-0 text-secondary lh-lg">ألوان متناسقة وخط عربي (Cairo) وبطاقات واضحة للعرض.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="card content-card shadow-sm border-0 h-100">
+            <div class="card-body p-4 p-md-5">
+              <h2 class="h5 fw-bold section-heading mb-2">
+                <i class="bi bi-shield-check ms-2" aria-hidden="true"></i>
+                تنبيه مهم
+              </h2>
+              <p class="mb-0 text-secondary lh-lg">
+                هذا الموقع لأغراض تعليمية وتصميم واجهة فقط. لا يعتبر تشخيصاً طبياً ولا يغني عن مراجعة الطبيب.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card content-card shadow-sm border-0 h-100">
+            <div class="card-body p-4 p-md-5">
+              <h2 class="h5 fw-bold section-heading mb-3">
+                <i class="bi bi-link-45deg ms-2" aria-hidden="true"></i>
+                روابط سريعة
+              </h2>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-outline-primary rounded-pill" href="diagnosis.html">صفحة التشخيص</a>
+                <a class="btn btn-outline-primary rounded-pill" href="diseases.html">صفحة الأمراض</a>
+                <a class="btn btn-outline-primary rounded-pill" href="about.html">عن المشروع</a>
+                <a class="btn btn-outline-primary rounded-pill" href="contact.html">تواصل معنا</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer py-4 mt-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-between g-3">
+        <div class="col-md text-center text-md-start">
+          <span class="text-white fw-semibold d-block mb-1">الموقع الطبي</span>
+          <small class="opacity-75">معلومات تعليمية — ليس بديلاً عن استشارة مختص.</small>
+        </div>
+        <div class="col-md-auto text-center">
+          <a href="contact.html">تواصل معنا</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

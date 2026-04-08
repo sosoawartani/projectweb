@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>التواصل — الموقع الطبي</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="d-flex flex-column min-vh-100 site-body">
+  <nav class="navbar navbar-expand-lg navbar-dark site-navbar shadow">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+        <span class="brand-icon rounded-circle d-inline-flex align-items-center justify-content-center text-white">
+          <i class="bi bi-heart-pulse-fill" aria-hidden="true"></i>
+        </span>
+        الموقع الطبي
+      </a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="قائمة التنقل">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-1">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><i class="bi bi-house-door ms-1" aria-hidden="true"></i> الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="diagnosis.html"><i class="bi bi-clipboard2-pulse ms-1" aria-hidden="true"></i> التشخيص</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="diseases.html"><i class="bi bi-journal-medical ms-1" aria-hidden="true"></i> الأمراض</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html"><i class="bi bi-info-circle ms-1" aria-hidden="true"></i> من نحن</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contact.html"><i class="bi bi-envelope ms-1" aria-hidden="true"></i> التواصل</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container flex-grow-1 py-4 py-lg-5">
+    <div class="page-hero rounded-4 text-white p-4 p-md-5 mb-4 mb-lg-5">
+      <div class="d-flex flex-column flex-md-row align-items-start gap-3 gap-md-4">
+        <span class="hero-icon rounded-3 d-inline-flex align-items-center justify-content-center flex-shrink-0">
+          <i class="bi bi-envelope-heart" aria-hidden="true"></i>
+        </span>
+        <div>
+          <h1 class="h2 fw-bold mb-2">تواصل معنا</h1>
+          <p class="mb-0 opacity-90 lh-lg">أرسل استفسارك أو ملاحظاتك — سنرد بأسرع وقت ممكن ضمن نطاق المشروع التعليمي.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-8">
+        <form id="contact-form" class="card contact-card content-card shadow-sm border-0">
+          <div class="card-body p-4 p-md-5">
+            <div class="mb-4">
+              <label for="contact-name" class="form-label fw-semibold">
+                <i class="bi bi-person-fill label-icon ms-2" aria-hidden="true"></i>
+                الاسم
+              </label>
+              <input type="text" class="form-control form-control-lg rounded-3" id="contact-name" name="name" autocomplete="name" placeholder="اسمك الكامل" />
+            </div>
+            <div class="mb-4">
+              <label for="contact-email" class="form-label fw-semibold">
+                <i class="bi bi-envelope-at-fill label-icon ms-2" aria-hidden="true"></i>
+                البريد الإلكتروني
+              </label>
+              <input type="email" class="form-control form-control-lg rounded-3" id="contact-email" name="email" autocomplete="email" placeholder="example@email.com" />
+            </div>
+            <div class="mb-4">
+              <label for="contact-message" class="form-label fw-semibold">
+                <i class="bi bi-chat-left-text-fill label-icon ms-2" aria-hidden="true"></i>
+                الرسالة
+              </label>
+              <textarea class="form-control rounded-3" id="contact-message" name="message" rows="5" placeholder="اكتب رسالتك هنا..."></textarea>
+            </div>
+            <button type="submit" id="contact-submit" class="btn btn-primary btn-lg rounded-pill px-5">
+              <i class="bi bi-send-fill ms-2" aria-hidden="true"></i>
+              إرسال الرسالة
+            </button>
+            <p class="text-secondary small mb-0 mt-3">ملاحظة: زر الإرسال للتصميم فقط (بدون منطق برمجي).</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer py-4 mt-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-between g-3">
+        <div class="col-md text-center text-md-start">
+          <span class="text-white fw-semibold d-block mb-1">الموقع الطبي</span>
+          <small class="opacity-75">معلومات تعليمية — ليس بديلاً عن استشارة مختص.</small>
+        </div>
+        <div class="col-md-auto text-center">
+          <a href="index.html">الرئيسية</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>

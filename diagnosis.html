@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>التشخيص — الموقع الطبي</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="d-flex flex-column min-vh-100 site-body">
+  <nav class="navbar navbar-expand-lg navbar-dark site-navbar shadow">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+        <span class="brand-icon rounded-circle d-inline-flex align-items-center justify-content-center text-white">
+          <i class="bi bi-heart-pulse-fill" aria-hidden="true"></i>
+        </span>
+        الموقع الطبي
+      </a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="قائمة التنقل">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-1">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><i class="bi bi-house-door ms-1" aria-hidden="true"></i> الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="diagnosis.html"><i class="bi bi-clipboard2-pulse ms-1" aria-hidden="true"></i> التشخيص</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="diseases.html"><i class="bi bi-journal-medical ms-1" aria-hidden="true"></i> الأمراض</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html"><i class="bi bi-info-circle ms-1" aria-hidden="true"></i> من نحن</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"><i class="bi bi-envelope ms-1" aria-hidden="true"></i> التواصل</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container flex-grow-1 py-4 py-lg-5">
+    <div class="page-hero rounded-4 text-white p-4 p-md-5 mb-4 mb-lg-5">
+      <div class="d-flex flex-column flex-md-row align-items-start gap-3 gap-md-4">
+        <span class="hero-icon rounded-3 d-inline-flex align-items-center justify-content-center flex-shrink-0">
+          <i class="bi bi-clipboard2-pulse" aria-hidden="true"></i>
+        </span>
+        <div>
+          <h1 class="h2 fw-bold mb-2">التشخيص المبدئي</h1>
+          <p class="mb-0 opacity-90 lh-lg">حدّد الأعراض التي تنطبق عليك، ثم اضغط «تحليل» (زر للتصميم فقط) — هذا ليس تشخيصاً طبياً.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert disclaimer-strip bg-warning bg-opacity-10 text-dark border-0 rounded-3 mb-4" role="note">
+      <i class="bi bi-info-circle-fill text-warning ms-2" aria-hidden="true"></i>
+      هذا المحتوى للتعليم فقط. في الحالات الطارئة راجع الطوارئ أو اتصل بخدمات الإسعاف.
+    </div>
+
+    <div class="card content-card shadow-sm border-0 mb-4" aria-labelledby="symptoms-title">
+      <div class="card-body p-4">
+        <h2 class="card-title h5 mb-1 section-heading fw-bold" id="symptoms-title">
+          <i class="bi bi-ui-checks-grid ms-2" aria-hidden="true"></i>
+          الأعراض
+        </h2>
+        <p class="text-secondary small mb-4">يمكنك اختيار أكثر من عرض واحد (تصميم فقط).</p>
+        <div class="row row-cols-1 row-cols-sm-2 g-3 mb-4">
+          <div class="col">
+            <div class="symptom-card rounded-3 p-3 h-100">
+              <div class="form-check m-0">
+                <input class="form-check-input" type="checkbox" id="symptom-fever" />
+                <label class="form-check-label fw-semibold" for="symptom-fever">حمى</label>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="symptom-card rounded-3 p-3 h-100">
+              <div class="form-check m-0">
+                <input class="form-check-input" type="checkbox" id="symptom-cough" />
+                <label class="form-check-label fw-semibold" for="symptom-cough">سعال</label>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="symptom-card rounded-3 p-3 h-100">
+              <div class="form-check m-0">
+                <input class="form-check-input" type="checkbox" id="symptom-headache" />
+                <label class="form-check-label fw-semibold" for="symptom-headache">صداع</label>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="symptom-card rounded-3 p-3 h-100">
+              <div class="form-check m-0">
+                <input class="form-check-input" type="checkbox" id="symptom-nausea" />
+                <label class="form-check-label fw-semibold" for="symptom-nausea">غثيان</label>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="symptom-card rounded-3 p-3 h-100">
+              <div class="form-check m-0">
+                <input class="form-check-input" type="checkbox" id="symptom-fatigue" />
+                <label class="form-check-label fw-semibold" for="symptom-fatigue">إرهاق</label>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="symptom-card rounded-3 p-3 h-100">
+              <div class="form-check m-0">
+                <input class="form-check-input" type="checkbox" id="symptom-sore-throat" />
+                <label class="form-check-label fw-semibold" for="symptom-sore-throat">التهاب حلق</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" id="analyze-btn" class="btn btn-primary btn-lg rounded-pill px-4">
+          <i class="bi bi-search ms-2" aria-hidden="true"></i>
+          تحليل الأعراض
+        </button>
+      </div>
+    </div>
+
+    <div class="card content-card shadow-sm border-0">
+      <div class="card-body p-4">
+        <h2 class="card-title h5 mb-3 section-heading fw-bold">
+          <i class="bi bi-graph-up-arrow ms-2" aria-hidden="true"></i>
+          النتيجة
+        </h2>
+        <div id="result-container" class="result-box border rounded-3 p-4 text-body-secondary">
+          هذه مساحة لعرض النتيجة (واجهة فقط). يمكن لاحقاً ربطها بمنطق برمجي حسب متطلبات المشروع.
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer py-4 mt-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-between g-3">
+        <div class="col-md text-center text-md-start">
+          <span class="text-white fw-semibold d-block mb-1">الموقع الطبي</span>
+          <small class="opacity-75">معلومات تعليمية — ليس بديلاً عن استشارة مختص.</small>
+        </div>
+        <div class="col-md-auto text-center">
+          <a href="index.html">الرئيسية</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>

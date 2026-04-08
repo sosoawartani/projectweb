@@ -1,0 +1,162 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body.site-body {
+  font-family: "Cairo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #eff6ff;
+  background-image: radial-gradient(
+      ellipse 120% 80% at 100% 0%,
+      rgba(37, 99, 235, 0.12),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse 80% 60% at 0% 100%,
+      rgba(30, 64, 175, 0.08),
+      transparent 45%
+    );
+}
+
+.site-navbar {
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 55%, #1e3a8a 100%) !important;
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
+}
+
+.site-navbar .navbar-brand {
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+}
+
+.brand-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: rgba(255, 255, 255, 0.15);
+  font-size: 1.25rem;
+}
+
+.site-navbar .nav-link {
+  border-radius: 0.5rem;
+  padding-inline: 0.85rem !important;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.site-navbar .nav-link:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.site-navbar .nav-link.active {
+  background: rgba(255, 255, 255, 0.2);
+  font-weight: 600;
+}
+
+.page-hero {
+  background: linear-gradient(125deg, #2563eb 0%, #1e3a8a 100%);
+  box-shadow: 0 0.5rem 1.5rem rgba(37, 99, 235, 0.28);
+}
+
+.page-hero .hero-icon {
+  width: 3rem;
+  height: 3rem;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 1.5rem;
+}
+
+.content-card {
+  border: 1px solid rgba(37, 99, 235, 0.12) !important;
+  transition: box-shadow 0.25s ease, transform 0.2s ease;
+}
+
+.content-card:hover {
+  box-shadow: 0 0.75rem 2rem rgba(37, 99, 235, 0.12) !important;
+}
+
+.section-heading {
+  color: #1d4ed8;
+}
+
+.symptom-card {
+  border: 1px solid rgba(37, 99, 235, 0.15);
+  background: #fff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.symptom-card:hover {
+  border-color: rgba(37, 99, 235, 0.45);
+  box-shadow: 0 0.25rem 0.75rem rgba(37, 99, 235, 0.1);
+}
+
+.symptom-card .form-check-input:checked {
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+.result-box,
+.disease-info {
+  white-space: pre-line;
+  min-height: 3.5rem;
+  border-inline-start: 4px solid #1d4ed8 !important;
+  background: linear-gradient(to bottom, #fff, #eff6ff) !important;
+}
+
+.list-group-item[data-disease] {
+  cursor: pointer;
+  border-inline-start: 3px solid transparent;
+  transition: background 0.2s ease, border-color 0.2s ease, padding-inline 0.2s ease;
+}
+
+.list-group-item[data-disease]:hover {
+  background-color: rgba(37, 99, 235, 0.06);
+  border-inline-start-color: #1d4ed8;
+}
+
+.list-group-item[data-disease]:active {
+  background-color: rgba(37, 99, 235, 0.12);
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  box-shadow: 0 0.35rem 0.85rem rgba(37, 99, 235, 0.35);
+  font-weight: 600;
+  padding-inline: 1.35rem;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0.45rem 1rem rgba(37, 99, 235, 0.45);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.site-footer {
+  background: #172554;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: auto;
+}
+
+.site-footer a {
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.contact-card .form-control:focus {
+  border-color: rgba(37, 99, 235, 0.55);
+  box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.15);
+}
+
+.label-icon {
+  color: #1d4ed8;
+}
+
+.disclaimer-strip {
+  font-size: 0.8rem;
+  border-inline-start: 3px solid #f59e0b;
+}
